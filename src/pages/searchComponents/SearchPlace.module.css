@@ -45,14 +45,6 @@
     font-weight: bold;
   }
 
-  .red {
-    background-color: #570021;
-  }
-
-  .lightRed {
-    background-color: #960000;
-  }
-
   .actions button:hover,
   .actions button:active,
   .actions2 button:hover,
@@ -104,14 +96,6 @@
     line-height: 0px;
   }
 
-  .red {
-    background-color: #570021;
-  }
-
-  .lightRed {
-    background-color: #960000;
-  }
-
   .actions button:hover,
   .actions button:active,
   .actions2 button:hover,
@@ -119,4 +103,12 @@
     background-color: #a50e48;
     border-color: #a50e48;
   }
+}
+
+.red {
+  background-color: #960000;
+}
+
+.lightRed {
+  background-color: #570021;
 }

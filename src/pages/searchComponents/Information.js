@@ -9,7 +9,7 @@ const data = [
     text1:
       "Strona służy do tłumaczenia wyrazów z języka angielskiego na język niemiecki i odwrotnie.",
     text2: "Użycie w 3 krokach:",
-    text3: " -zaznacz tłumaczenie z jakiego język na jaki tłumaczysz,",
+    text3: " -zaznacz tłumaczenie z jakiego języka na jaki tłumaczysz,",
     text4: " -wpisz wyraz,",
     text5: " -zobacz rezultat.",
   },
@@ -65,7 +65,13 @@ function Information() {
           <p>{showData[0].text4}</p>
           <p>{showData[0].text5}</p>
           <div className={classes.active}>
-            <button onClick={changeLanguage}>zmien jezyk</button>
+            <button onClick={changeLanguage}>
+              {lang === "PL"
+                ? "zmień język"
+                : lang === "EN"
+                ? "change language"
+                : "Sprache ändern"}
+            </button>
           </div>
         </div>
       </Card>

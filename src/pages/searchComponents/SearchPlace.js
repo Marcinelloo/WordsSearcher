@@ -22,35 +22,40 @@ function SearchPlace() {
   }
 
   return (
-    <form className={classes.form} onSubmit={setWordHolder}>
-      <div className={classes.searchPanel}>
-        <input
-          type="text"
-          required
-          id="inputText"
-          placeholder=" write here.."
-          ref={textInput}
-        />
-        <div className={classes.actions}>
-          <button>search</button>
+    <div>
+      <label htmlFor="title">
+        {language === "en" ? "Write your word!!" : "Schreiben Sie Ihr Wort!!"}
+      </label>
+      <form className={classes.form} onSubmit={setWordHolder}>
+        <div className={classes.searchPanel}>
+          <input
+            type="text"
+            required
+            id="inputText"
+            placeholder= {language === "en" ? "  write here..." : "   hier schreiben..."}
+            ref={textInput}
+          />
+          <div className={classes.actions}>
+            <button>{language === "en" ? "search" : "Suche"}</button>
+          </div>
         </div>
-      </div>
 
-      <div className={classes.actions2}>
-        <button
-          className={language === "en" ? classes.lightRed : classes.red}
-          onClick={(e) => setLangToEn(e)}
-        >
-          En -> De
-        </button>
-        <button
-          className={language === "de" ? classes.lightRed : classes.red}
-          onClick={(e) => setLangTode(e)}
-        >
-          De -> En
-        </button>
-      </div>
-    </form>
+        <div className={classes.actions2}>
+          <button
+            className={language === "en" ? classes.lightRed : classes.red}
+            onClick={(e) => setLangToEn(e)}
+          >
+            En -> De
+          </button>
+          <button
+            className={language === "de" ? classes.lightRed : classes.red}
+            onClick={(e) => setLangTode(e)}
+          >
+            De -> En
+          </button>
+        </div>
+      </form>
+    </div>
   );
 }
 

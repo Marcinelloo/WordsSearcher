@@ -58,7 +58,9 @@ function AnswerPage() {
     return (
       <div className={classes.info}>
         {dictionaryData.error ? (
-          <MessageBox>{dictionaryData.error}</MessageBox>
+          <Card>
+            <MessageBox>{dictionaryData.error}</MessageBox>
+          </Card>
         ) : (
           <LoadingBox />
         )}
@@ -72,25 +74,23 @@ function AnswerPage() {
   }
 
   function germanWordFound() {
-    if (translation.loading === false)
+    if (translation.loading === false && !dictionaryData.error)
       return (
         <div>
           <SearchInformation
-            wordNameEN={usedWord}
-            wordNameDE={translation.word}
+            firstWord={usedWord}
+            secondWord={translation.word}
+            showLang={showLanguage}
+            usedLang={usedlanguage}
           />
           <div className={classes.action}>
             <button onClick={(e) => changeLanguage(e)}>
-              {showLanguage === "en" ? "to de" : "to en"}
+              {showLanguage === "en" ? "german" : "englisch"}
             </button>
           </div>
         </div>
       );
-    return (
-      <div>
-        <LoadingBox />
-      </div>
-    );
+    return <div>{dictionaryData.error ? <div></div> : <LoadingBox />}</div>;
   }
 
   return (
@@ -99,7 +99,6 @@ function AnswerPage() {
         <Card>
           <div className={classes.formPading}>
             <div className={classes.control}>
-              <label htmlFor="title">Write your word!!</label>
               <SearchPlace />
             </div>
           </div>
@@ -110,7 +109,7 @@ function AnswerPage() {
           <div>{germanWordFound()}</div>
         </Card>
       </div>
-      <div>{add()}</div>
+      {add()}
     </div>
   );
 }

@@ -15,7 +15,6 @@ function SearchBox() {
           <Card>
             <div className={classes.formPading}>
               <div className={classes.control}>
-                <label htmlFor="title">Write your word!!</label>
                 <SearchPlace />
               </div>
             </div>
