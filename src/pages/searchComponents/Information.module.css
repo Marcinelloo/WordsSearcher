@@ -1,0 +1,40 @@
+.information {
+  padding: 5% 20%;
+}
+
+.items {
+  padding: 1% 3%;
+}
+
+.active {
+  padding: 1%;
+  text-align: right;
+}
+
+@media screen and (max-width: 800px) {
+  .information {
+    padding: 5% 5%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .information {
+    padding: 5% 20%;
+  }
+}
+
+.active button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #77002e;
+  color: white;
+  padding: 0.3rem 1rem;
+  border: 1px solid #77002e;
+  border-radius: 20px;
+}
+
+.items .active button:hover,
+.items .active button:active {
+  background-color: #a50e48;
+  border-color: #a50e48;
+}

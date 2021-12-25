@@ -1,0 +1,40 @@
+:root {
+  --primary-color: #be1558;
+  --secondary-color: #e75874;
+  --dark-color: #322514;
+  --light-color: #fbcbc9;
+  --write--color: black;
+}
+.stopBar {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 0.01% 10%;
+}
+
+.stopBar .grid {
+  display: grid;
+  grid-template-columns: 40% 50% 10%;
+}
+
+.stopBar ul {
+  list-style: none;
+  margin: 0;
+  padding-right: 10%;
+}
+
+.stopBar a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--write--color);
+}
+
+.stopBar a:hover,
+.stopBar a:active,
+.stopBar a.active {
+  color: white;
+  border-bottom: 3px red solid;
+}

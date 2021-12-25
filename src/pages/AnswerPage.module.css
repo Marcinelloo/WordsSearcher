@@ -1,0 +1,49 @@
+.searchInformation {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  padding-left: 8%;
+  max-width: fit-content;
+  padding-right: 8%;
+}
+
+.searchBox2 {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.searchResult {
+  padding: 1%;
+  padding-left: 12%;
+  padding-right: 8%;
+  padding-bottom: 10%;
+  max-width: fit-content;
+  display: flex;
+}
+
+.action button {
+  margin-left: 60%;
+  margin-bottom: 2%;
+  font: inherit;
+  cursor: pointer;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 1px solid #77002e;
+  border-radius: 40px;
+  font-weight: bold;
+  background-color: #960000;
+}
+
+.formPading {
+  padding: 1rem;
+}
+
+.control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 25px;
+}
+
+.info {
+  padding: 5% 5%;
+}

@@ -1,0 +1,28 @@
+.searchBox {
+  padding: 7%;
+  max-width: auto;
+  max-height: auto;
+}
+
+.pading1 {
+  padding: 2% 3% 5% 6%;
+  margin-bottom: 15%;
+}
+.title {
+  padding: 4%;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.text {
+  font-size: 15px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.subText {
+  padding-left: 3%;
+  padding-bottom: 2%;
+  font-size: 14px;
+  font-style: italic;
+}

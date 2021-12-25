@@ -1,0 +1,68 @@
+:root {
+  --primary-color: #be1558;
+  --secondary-color: #e75874;
+  --dark-color: #322514;
+  --light-color: #fbcbc9;
+  --write--color: black;
+}
+
+@media screen and (min-width: 800px) {
+  section {
+    padding: 1% 5%;
+    background-color: var(--light-color);
+  }
+
+  .section ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    list-style: none;
+  }
+
+  .section img {
+    width: 70%;
+    border-radius: 10px;
+  }
+
+  .formPading {
+    padding: 1rem;
+  }
+
+  .control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    padding: 1% 0%;
+    background-color: var(--light-color);
+  }
+
+  .section ul {
+    display: grid;
+    margin-right: 8%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    list-style: none;
+  }
+
+  .section img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+  }
+
+  .formPading {
+    padding: 0.5rem;
+  }
+
+  .control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+  }
+}
