@@ -23,7 +23,7 @@ function AnswerPage() {
   const dictionaryData = useSelector((state) => state.dictionary);
 
   useEffect(() => {
-    dispatch(translate(toTranslatelanguage, usedWord));
+    dispatch(translate(usedlanguage, toTranslatelanguage, usedWord));
   }, [usedWord]);
 
   useEffect(() => {
