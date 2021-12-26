@@ -1,3 +1,11 @@
+:root {
+  --main-color: #edc7b7;
+  --body-color: #eee2dc;
+  --light-color: #424242;
+  --blue-color: #123c69;
+  --red--color: #ac3b61;
+}
+
 .information {
   padding: 5% 20%;
 }
@@ -26,7 +34,7 @@
 .active button {
   font: inherit;
   cursor: pointer;
-  background-color: #77002e;
+  background-color: var(--red--color);
   color: white;
   padding: 0.3rem 1rem;
   border: 1px solid #77002e;
@@ -35,6 +43,6 @@
 
 .items .active button:hover,
 .items .active button:active {
-  background-color: #a50e48;
-  border-color: #a50e48;
+  background-color: #77002e;
+  border-color: #77002e;
 }

@@ -1,15 +1,15 @@
 :root {
-  --primary-color: #be1558;
-  --secondary-color: #e75874;
-  --dark-color: #322514;
-  --light-color: #fbcbc9;
-  --write--color: black;
+  --main-color: #edc7b7;
+  --body-color: #eee2dc;
+  --light-color: #424242;
+  --blue-color: #123c69;
+  --red--color: #ac3b61;
 }
 
 @media screen and (min-width: 800px) {
   section {
     padding: 1% 5%;
-    background-color: var(--light-color);
+    background-color: var(--body-color);
   }
 
   .section ul {
@@ -38,7 +38,7 @@
 @media screen and (max-width: 800px) {
   section {
     padding: 1% 0%;
-    background-color: var(--light-color);
+    background-color: var(--body-color);
   }
 
   .section ul {

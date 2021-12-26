@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #be1558;
-  --secondary-color: #e75874;
-  --dark-color: #322514;
-  --light-color: #fbcbc9;
-  --write--color: black;
+  --main-color: #edc7b7;
+  --body-color: #eee2dc;
+  --light-color: #bab2b5;
+  --blue-color: #123c69;
+  --red--color: #ac3b61;
 }
 .stopBar {
   width: auto;
@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--primary-color);
+  background-color: var(--red--color);
   padding: 0.01% 10%;
 }
 
@@ -29,7 +29,7 @@
 .stopBar a {
   text-decoration: none;
   font-size: 1.3rem;
-  color: var(--write--color);
+  color: black;
 }
 
 .stopBar a:hover,
