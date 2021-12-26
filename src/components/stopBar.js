@@ -5,7 +5,7 @@ function StopBar() {
   return (
     <div className={classes.stopBar}>
       <div className={classes.grid}>
-        <p className="p-2">WordsSearcher Copyright &copy; 2021 Version: 1.1</p>
+        <p className="p-2">WordsSearcher Copyright &copy; 2021 Version: 1.2</p>
       </div>
       <ul>
         <li>
